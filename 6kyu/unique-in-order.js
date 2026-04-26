@@ -5,9 +5,9 @@
 // Solution:
 
 function uniqueInOrder(str) {
-  let arr = []
+  let arr = [];
   if (str.length < 0) {
-    console.log(arr)
+    console.log(arr);
     arr = str.split("");
   } else {
     arr = str;
@@ -24,7 +24,6 @@ function uniqueInOrder(str) {
 console.log(uniqueInOrder("AAAABBBCCDAABBB"));
 console.log(uniqueInOrder("ABBCcAD"));
 console.log(uniqueInOrder([1, 2, 2, 3, 3]));
-
 
 // Pro solution:
 /*
