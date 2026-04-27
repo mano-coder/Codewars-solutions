@@ -71,6 +71,17 @@ function decodeMorse(morseCode) {
   return result.join(" ");
 }
 
+// Pro solution
+// function decodeMorse(morseCode) {
+//   const decodeMorseLetter = (letter) => {
+//     return MORSE_CODE[letter];
+//   };
+//   const decodeMorseWord = (word) => {
+//     return word.split(" ").map(decodeMorseLetter).join("");
+//   };
+//   return morseCode.trim().split("   ").map(decodeMorseWord).join(" ");
+// }
+
 console.log(decodeMorse("  .... . .--   .--- ..- -.. . ....   . .... . .--"));
 console.log(decodeMorse("   .... . -.--   "));
 console.log(decodeMorse(".... . -.--   .--- ..- -.. ."));
