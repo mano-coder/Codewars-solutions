@@ -10,4 +10,9 @@ function solution(string) {
     .join("");
 }
 
+// Pro solution
+// function solution(string) {
+//   return string.replace(/([A-Z])/g, ` $1`);
+// }
+
 console.log(solution("helloThere"));
