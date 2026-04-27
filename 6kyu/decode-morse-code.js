@@ -56,3 +56,18 @@ const MORSE_CODE = {
   "--..": "Z",
 };
 
+function decodeMorse(morseCode) {
+  const wordsArr = morseCode.trim().split("   ");
+  const result = [];
+  wordsArr.forEach((word) => {
+    const letterArr = word.trim().split(" ");
+    let newWord = "";
+    for (let letter of letterArr) {
+      newWord += MORSE_CODE[letter];
+    }
+    result.push(newWord);
+  });
+
+  return result.join(" ");
+}
+
