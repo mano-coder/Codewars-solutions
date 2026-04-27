@@ -56,6 +56,10 @@ const MORSE_CODE = {
   "--..": "Z",
 };
 
+/* implement a function that would take the morse code as input and return a 
+ decoded human-readable string*/
+
+// my solution
 function decodeMorse(morseCode) {
   const wordsArr = morseCode.trim().split("   ");
   const result = [];
