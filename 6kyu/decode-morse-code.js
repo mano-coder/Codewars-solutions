@@ -71,3 +71,6 @@ function decodeMorse(morseCode) {
   return result.join(" ");
 }
 
+console.log(decodeMorse("  .... . .--   .--- ..- -.. . ....   . .... . .--"));
+console.log(decodeMorse("   .... . -.--   "));
+console.log(decodeMorse(".... . -.--   .--- ..- -.. ."));
