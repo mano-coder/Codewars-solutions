@@ -27,4 +27,5 @@ const blockBuilder = (width, height, arr) => {
   return block
 }
 
-console.log(towerBuilder(1, [1, 2]));
+// console.log(towerBuilder(1, [2, 3]));
+console.log(towerBuilder(3, [2, 3]));
