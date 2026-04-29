@@ -1,3 +1,5 @@
+// My solution
+
 function towerBuilder(nFloors, nBlockSz) {
   const [w, h] = nBlockSz;
   let block = [];
@@ -19,5 +21,4 @@ const blockBuilder = (width, height, arr) => {
   return block
 }
 
-// console.log(towerBuilder(1, [2, 3]));
 console.log(towerBuilder(3, [2, 3]));
