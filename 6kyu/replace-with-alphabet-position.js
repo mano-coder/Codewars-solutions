@@ -1,3 +1,5 @@
+// Given a string, replace every letter with its position in the alphabet.
+//my solution
 function alphabetPosition(text) {
   const alpha = "abcdefghijklmnopqrstuvwxyz".split("");
   const arr = [...text];
