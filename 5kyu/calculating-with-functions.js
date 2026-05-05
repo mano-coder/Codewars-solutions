@@ -1,76 +1,18 @@
-function zero(fun) {
-  if (fun) {
-    return fun(0);
-  }
-  return 0;
-}
-function one(fun) {
-  if (fun) {
-    return fun(1);
-  }
-  return 1;
-}
-function two(fun) {
-  if (fun) {
-    return fun(2);
-  }
-  return 2;
-}
-function three(fun) {
-  if (fun) {
-    return fun(3);
-  }
-  return 3;
-}
-function four(fun) {
-  if (fun) {
-    return fun(4);
-  }
-  return 4;
-}
-function five(fun) {
-  if (fun) {
-    return fun(5);
-  }
-  return 5;
-}
-function six(fun) {
-  if (fun) {
-    return fun(6);
-  }
-  return 6;
-}
-function seven(fun) {
-  if (fun) {
-    return fun(7);
-  }
-  return 7;
-}
-function eight(fun) {
-  if (fun) {
-    return fun(8);
-  }
-  return 8;
-}
-function nine(fun) {
-  if (fun) {
-    return fun(9);
-  }
-  return 9;
-}
+/*
+write calculations using functions and get the results. Let's have a look at some examples:
+seven(times(five()));   //  must return 35
+*/
 
-function plus(num) {
-  return (left) => left + num;
-}
-function minus(num) {
-  return (left) => left - num;
-}
-function times(num) {
-  return (left) => left * num;
-}
-function dividedBy(num) {
-  return (left) => Math.floor(left / num);
-}
+const zero = (a) => (a ? a(0) : 0);
+const one = (a) => (a ? a(1) : 1);
+const two = (a) => (a ? a(2) : 2);
+const three = (a) => (a ? a(3) : 3);
+const four = (a) => (a ? a(4) : 4);
+const five = (a) => (a ? a(5) : 5);
+const six = (a) => (a ? a(6) : 6);
+const seven = (a) => (a ? a(7) : 7);
+const eight = (a) => (a ? a(8) : 8);
+const nine = (a) => (a ? a(9) : 9);
 
 //console.log(eight(plus(nine(fun)))); // 17
 console.log(eight(dividedBy(three())));
