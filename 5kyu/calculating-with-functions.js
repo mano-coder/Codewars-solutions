@@ -14,5 +14,13 @@ const seven = (a) => (a ? a(7) : 7);
 const eight = (a) => (a ? a(8) : 8);
 const nine = (a) => (a ? a(9) : 9);
 
-//console.log(eight(plus(nine(fun)))); // 17
-console.log(eight(dividedBy(three())));
+const plus = (a) => (b) => a + b;
+const minus = (a) => (b) => b - a;
+const dividedBy = (a) => (b) => Math.floor(b / a);
+const times = (a) => (b) => a * b;
+
+// Tests
+console.log(seven(times(five())));
+console.log(four(plus(nine())));
+console.log(eight(minus(three())));
+console.log(six(dividedBy(two())));
