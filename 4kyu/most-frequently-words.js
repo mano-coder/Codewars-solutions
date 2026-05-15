@@ -1,24 +1,17 @@
 function topThreeWords(text) {
   const parsedArr = text
-    .replace(/[^\w'\s]/gi, " ")
+    .replace(/[^a-zA-Z'\s]+/gi, " ")
     .trim()
     .toLowerCase()
-    .split(" ");
-  const solid = parsedArr;
-  let track = [];
-  for (let i = 0; i < solid.length; i++) {
-    const selected = solid[i];
-    let count = 0;
-
-    for (const word of solid) {
-      console.log(word)
-      if (selected === word) {
-        count++;
-        track.push(count);
-      }
-    }
+    .split(/\s+/)
+    .filter((word) => /[a-zA-Z]/gi.test(word));
+  let map = {};
+  for (const word of parsedArr) {
+    map[word] = (map[word] || 0) + 1;
   }
-  return solid;
+  return Object.entries(map).sort((a, b) => b[1] - a[1])
+      .map(item => item[0])
+      .slice(0,3)
 }
 
-console.log(topThreeWords("  //wont won't wOn't "));
+console.log(topThreeWords("  //wont   won't   _    wOn't  wOn't wOn't wOn't"));
