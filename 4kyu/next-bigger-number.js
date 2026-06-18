@@ -1,4 +1,5 @@
 function nextBigger(n) {
+  console.log(typeof n)
   const numArr = n.split("");
   numArr[numArr.length - 1] = numArr[numArr.length - 2]
   return numArr;
